@@ -4,24 +4,14 @@
   "$id": "http://example.com/root.json",
   "type": "object",
   "title": "The Root Schema",
-  "required": [
-    "owner",
-    "name",
-    "pcb",
-    "switches",
-    "keyset",
-    "description",
-    "photos"
-  ],
+  "required": ["owner", "name", "pcb", "switches", "keyset", "description", "photos"],
   "properties": {
     "owner": {
       "$id": "#/properties/owner",
       "type": "string",
       "title": "The Owner Schema",
       "minLength": 1,
-      "examples": [
-        "Zekth"
-      ],
+      "examples": ["Zekth"],
       "pattern": "^(.*)$"
     },
     "name": {
@@ -29,9 +19,7 @@
       "type": "string",
       "title": "The Name Schema",
       "minLength": 1,
-      "examples": [
-        "der 60%"
-      ],
+      "examples": ["der 60%"],
       "pattern": "^(.*)$"
     },
     "pcb": {
@@ -39,9 +27,7 @@
       "type": "string",
       "title": "The Pcb Schema",
       "minLength": 1,
-      "examples": [
-        "KP XD64"
-      ],
+      "examples": ["KP XD64"],
       "pattern": "^(.*)$"
     },
     "switches": {
@@ -49,9 +35,7 @@
       "type": "string",
       "title": "The Switches Schema",
       "minLength": 1,
-      "examples": [
-        "Kailh Box Brown"
-      ],
+      "examples": ["Kailh Box Brown"],
       "pattern": "^(.*)$"
     },
     "keyset": {
@@ -59,9 +43,7 @@
       "type": "string",
       "title": "The Keyset Schema",
       "minLength": 1,
-      "examples": [
-        "GMK Plum"
-      ],
+      "examples": ["GMK Plum"],
       "pattern": "^(.*)$"
     },
     "description": {
@@ -69,9 +51,7 @@
       "type": "string",
       "title": "The Description Schema",
       "minLength": 1,
-      "examples": [
-        "c'est un clavier avec des touches"
-      ],
+      "examples": ["c'est un clavier avec des touches"],
       "pattern": "^(.*)$"
     },
     "photos": {
@@ -81,11 +61,9 @@
       "items": {
         "$id": "#/properties/photos/items",
         "type": "string",
-      "minLength": 1,
-      "title": "The photo filename Schema",
-        "examples": [
-          "zekth-60-1.jpg"
-        ],
+        "minLength": 1,
+        "title": "The photo filename Schema",
+        "examples": ["zekth-60-1.jpg"],
         "pattern": "^(.*)$"
       }
     }

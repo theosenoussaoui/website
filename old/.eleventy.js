@@ -7,7 +7,10 @@ const sharp = require('sharp');
 if (!fs.existsSync('./dist')) {
   fs.mkdirSync('./dist');
 }
-const keebImgSizes = [{ suffix: 'thumb', crop: true, size: [150, 150] }, { suffix: '320', size: [320, 240] }];
+const keebImgSizes = [
+  { suffix: 'thumb', crop: true, size: [150, 150] },
+  { suffix: '320', size: [320, 240] },
+];
 const imgParse = async () => {
   const srcDir = './src/img-keyboards';
   const outDir = './dist/img-keyboards';
@@ -32,20 +35,20 @@ function formatTitle(t) {
   t = t[0].toUpperCase() + t.slice(1);
   return t;
 }
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(sassPlugin);
   eleventyConfig.addPlugin(imgParse);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addFilter('htmlDateString', dateObj => {
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
-  eleventyConfig.addNunjucksFilter('basefilename', function(value) {
+  eleventyConfig.addNunjucksFilter('basefilename', function (value) {
     const arr = value.split('.');
     arr.pop();
     return arr.join('.');
   });
-  eleventyConfig.addNunjucksFilter('breadcrumb', function(page) {
-    const path = page.url.split('/').filter(d => {
+  eleventyConfig.addNunjucksFilter('breadcrumb', function (page) {
+    const path = page.url.split('/').filter((d) => {
       return d;
     });
     if (path.length <= 1) {
@@ -56,7 +59,7 @@ module.exports = function(eleventyConfig) {
     const breadcrumbPath = ['/'];
     breadcrumb.push(`<ul class="breadcrumb">`);
     breadcrumb.push('<li><a href="/">Accueil</a></li>');
-    path.forEach(p => {
+    path.forEach((p) => {
       breadcrumbPath.push(p);
       breadcrumb.push(`<li><a href="${breadcrumbPath.join('/').replace('//', '/')}">${formatTitle(p)}</a></li>`);
     });
