@@ -1,0 +1,32 @@
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Articles</a>
+      <a href="#">Contact</a>
+    </nav>
+    <h1>index layout</h1>
+    <article>
+      <slot />
+      <!-- Votre contenu est injecté ici -->
+    </article>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    h1 {
+      @apply text-4xl;
+    }
+  }
+</style>
