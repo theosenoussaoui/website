@@ -1,53 +1,47 @@
-# _[claviers-mecaniques.fr](https://claviers-mecaniques.fr)_
+# Astro Starter Kit: Minimal
 
-[![Discord](https://img.shields.io/discord/364402715545174027.svg?label=Discord&logo=Discord&logoColor=white)](https://discord.gg/V2Ns3gD) ![Code Style](https://img.shields.io/badge/code%20style-prettier-success.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/e3b278f2-0287-49c9-8594-75c012ccc12e/deploy-status)](https://app.netlify.com/sites/quirky-sammet-4e449c/deploys)
-
-
-## Requirements
-
-- [Node.js LTS](https://nodejs.org/en/)
-- a mechanical keyboard of your choice :eyes:
-
-
-## Build
-
-```bash
-npm install # install build dependencies
-npm run build # build website
+```
+npm create astro@latest -- --template minimal
 ```
 
-### Serve
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-```bash
-npm run serve
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-Note: With the `serve` command, two processes will run to serve the HTML files: one with hot reload, and a second to generate CSS for the SASS files. Modifying the code will reload the website but modifying the SASS files will not; you will have to refresh the page by yourself because there is no event spread between those two processes.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-## Contribute
+Any static assets, like images, can be placed in the `public/` directory.
 
-Any contribution is welcome! Just run these commands before opening a pull request:
+## 🧞 Commands
 
-```bash
-npm run prettier # Check code style
-npm run prettier:fix # Fix code style
-npm run chk:data # Ensure that data is well formated (e.g. keyboards)
-```
+All commands are run from the root of the project, from a terminal:
 
-## Deploy
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
 
-Travis automatically executes these tasks for every push on the `master` branch:
+## 👀 Want to learn more?
 
-```bash
-npm install
-npm run chk:data
-npm run prettier
-npm run build
-```
-
-If no exception is thrown, Travis will push the output to the `gh-pages` branch.
-
----
-
-_Made in France :fr:_
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
