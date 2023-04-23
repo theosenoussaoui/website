@@ -1,18 +1,20 @@
 import { getCollection } from "astro:content";
 
-export const getAllFilesFromSubGuides = async (
+export const getAllFilesFromSubDir = async (
   subDirectory: string,
+  subDirectoryPrefix: string,
   delimiter?: string
 ) => {
-  const guidesEntries = await getCollection("guides");
-  return guidesEntries
+  const subDirContent = await getCollection(subDirectory as any);
+  return subDirContent
     .filter(
-      (entry) => !entry.slug.startsWith("index") && entry.slug !== subDirectory
+      (entry) =>
+        !entry.slug.startsWith("index") && entry.slug !== subDirectoryPrefix
     )
     .map((entry) => ({
       params: {
         slug: entry.slug.replace(
-          delimiter ? delimiter + subDirectory : subDirectory + "/",
+          delimiter ? delimiter + subDirectoryPrefix : subDirectoryPrefix + "/",
           ""
         ),
       },

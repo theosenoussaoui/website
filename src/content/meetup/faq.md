@@ -4,26 +4,6 @@ title: FAQ
 img: meetup-banner.jpg
 ---
 
-<style>
-  body{
-    background-color:white;
-  }
-  p{
-    color:black;
-  }
-  a{
-    color:black;
-  }
-  li {
-    color: black;
-    font-weight: 300;
-    margin-left: -1em;
-  }
-  h3 {
-    text-align: left;
-  }
-</style>
-
 ### Conditions d’entrées
 
 1. avoir un ticket eventbrite

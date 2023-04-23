@@ -3,13 +3,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "assets/*": ["src/assets/*"],
       "components/*": ["src/components/*"],
       "content/*": ["src/content/*"],
       "layouts/*": ["src/layouts/*"],
+      "lib/*": ["src/lib/*"],
       "pages/*": ["src/pages/*"],
       "public/*": ["src/public/*"],
-      "styles/*": ["src/styles/*"],
-      "lib/*": ["src/lib/*"]
+      "styles/*": ["src/styles/*"]
     }
   }
 }

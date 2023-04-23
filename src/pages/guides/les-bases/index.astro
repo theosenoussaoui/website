@@ -1,10 +1,10 @@
 ---
 import PostsLayout from "layouts/PostsLayout.astro";
 
-import { getAllFilesFromSubGuides } from "lib/getContentFromSubdirectory";
+import { getAllFilesFromSubDir } from "lib/getContentFromSubdirectory";
 import { Content as IndexBaseGuide } from "content/guides/les-bases/index.md";
 
-const allPostsSlug = await getAllFilesFromSubGuides("les-bases", "/");
+const allPostsSlug = await getAllFilesFromSubDir("guides", "les-bases", "/");
 ---
 
 <PostsLayout>

@@ -1,0 +1,10 @@
+---
+import PostsLayout from "layouts/PostsLayout.astro";
+
+import { getAllFilesFromSubDir } from "lib/getContentFromSubdirectory";
+import { Content as IndexBaseGuide } from "content/pages-jaunes/index.md";
+---
+
+<PostsLayout>
+  <IndexBaseGuide />
+</PostsLayout>
