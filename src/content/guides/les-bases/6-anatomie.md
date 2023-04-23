@@ -1,7 +1,4 @@
 ---
-layout: layouts/page.njk
-tags:
-  - nav
 navtitle: Guides
 title: Anatomie du clavier
 img: bg-page.jpg

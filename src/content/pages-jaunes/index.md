@@ -1,7 +1,4 @@
 ---
-layout: layouts/page.njk
-tags:
-  - nav
 navtitle: Pages Jaunes
 title: Pages Jaunes
 img: bg-page.jpg

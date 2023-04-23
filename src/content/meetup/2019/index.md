@@ -1,7 +1,4 @@
 ---
-layout: layouts/page.njk
-tags:
-  - nav
 navtitle: Meetup
 title: Meetup
 img: meetup-banner.jpg

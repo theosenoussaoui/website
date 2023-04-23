@@ -1,0 +1,21 @@
+---
+import PostsLayout from "layouts/PostsLayout.astro";
+
+import { getAllFilesFromSubGuides } from "lib/getContentFromSubdirectory";
+import { Content as IndexBaseGuide } from "content/guides/les-bases/index.md";
+
+const allPostsSlug = await getAllFilesFromSubGuides("les-bases", "/");
+---
+
+<PostsLayout>
+  <IndexBaseGuide />
+  <ul>
+    {
+      allPostsSlug.map((post) => (
+        <li>
+          <a href={post.params.slug}>{post.props.entry.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</PostsLayout>

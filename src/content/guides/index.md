@@ -1,7 +1,4 @@
 ---
-layout: layouts/page.njk
-tags:
-  - nav
 navtitle: Guides
 title: Guides
 img: bg-page.jpg
