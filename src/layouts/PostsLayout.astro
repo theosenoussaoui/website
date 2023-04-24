@@ -1,3 +1,15 @@
+---
+import Footer from "components/ui/Footer.astro";
+import MiniHero from "components/ui/MiniHero.astro";
+import Navbar from "components/ui/Navbar.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -10,17 +22,25 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="/">Accueil</a>
-      <a href="/pages-jaunes">pages jaunes</a>
-      <a href="/guides">guides</a>
-      <a href="/guides/les-bases">les bases</a>
-      <a href="/meetup">meetup</a>
-    </nav>
-    <h1>posts layouts</h1>
-    <article class="prose mx-auto">
-      <slot />
-      <!-- Votre contenu est injecté ici -->
-    </article>
+    <div class="h-full bg-gray-900">
+      <Navbar />
+      <main>
+        <MiniHero  title={title} />
+        <div class="w-full bg-white">
+          <div class="container">
+            <article class="prose py-32">
+              <slot name="article" />
+            </article>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
+
+<style is:global>
+  body {
+    @apply min-h-screen;
+  }
+</style>
