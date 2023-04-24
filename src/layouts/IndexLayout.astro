@@ -10,25 +10,6 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="/">Accueil</a>
-      <a href="/pages-jaunes">pages jaunes</a>
-      <a href="/guides">guides</a>
-      <a href="/guides/les-bases">les bases</a>
-      <a href="/meetup">meetup</a>
-    </nav>
-    <h1>index layout</h1>
-    <article>
-      <slot />
-      <!-- Votre contenu est injecté ici -->
-    </article>
+    <slot />
   </body>
 </html>
-
-<style is:global>
-  html {
-    h1 {
-      @apply text-4xl;
-    }
-  }
-</style>
