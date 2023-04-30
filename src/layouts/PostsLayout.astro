@@ -1,46 +1,46 @@
 ---
 import Footer from "components/ui/Footer.astro";
 import MiniHero from "components/ui/MiniHero.astro";
-import Navbar from "components/ui/Navbar.astro";
+import Navbar from "components/ui/Navbar";
 
 interface Props {
-  title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="h-full bg-gray-900">
-      <Navbar />
-      <main>
-        <MiniHero  title={title} />
-        <div class="w-full bg-white">
-          <div class="container">
-            <article class="prose py-32">
-              <slot name="article" />
-            </article>
-          </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="h-full bg-gray-900">
+            <Navbar client:load />
+            <main>
+                <MiniHero title={title} />
+                <div class="w-full bg-white">
+                    <div class="container">
+                        <article class="prose py-32">
+                            <slot name="article" />
+                        </article>
+                    </div>
+                </div>
+            </main>
+            <Footer />
         </div>
-      </main>
-      <Footer />
-    </div>
-  </body>
+    </body>
 </html>
 
 <style is:global>
-  body {
-    @apply min-h-screen;
-  }
+    body {
+        @apply min-h-screen;
+    }
 </style>

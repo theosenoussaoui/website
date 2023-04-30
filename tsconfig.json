@@ -3,14 +3,32 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "assets/*": ["src/assets/*"],
-      "components/*": ["src/components/*"],
-      "content/*": ["src/content/*"],
-      "layouts/*": ["src/layouts/*"],
-      "lib/*": ["src/lib/*"],
-      "pages/*": ["src/pages/*"],
-      "public/*": ["src/public/*"],
-      "styles/*": ["src/styles/*"]
-    }
+      "assets/*": [
+        "src/assets/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "content/*": [
+        "src/content/*"
+      ],
+      "layouts/*": [
+        "src/layouts/*"
+      ],
+      "lib/*": [
+        "src/lib/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "public/*": [
+        "src/public/*"
+      ],
+      "styles/*": [
+        "src/styles/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }
