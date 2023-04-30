@@ -1,7 +1,9 @@
 ---
-navtitle: meetup/FAQ
-title: FAQ
-img: meetup-banner.jpg
+title: Meetup FAQ
+description: Meetup FAQ
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Meetup FAQ
 ---
 
 ### Conditions d’entrées

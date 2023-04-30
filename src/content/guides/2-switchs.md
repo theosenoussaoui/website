@@ -1,9 +1,10 @@
 ---
-navtitle: Guides
-title: Les Switchs
-img: bg-page.jpg
+title: Switches
+description: Switches
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Switches
 ---
-
 ### Tactile ou linéaire, silencieux ou clicky
 
 C'est **LA** question obscure que se pose tout premier acheteur de clavier mécanique, notamment ceux pourvu de switchs Cherry MX : quelle couleur de switch choisir ? On distingue principalement deux types de switchs , linéaires et tactiles ; et parmi ces derniers, certains sont silencieux, certains sont clicky — tous les linéaires étant silencieux.

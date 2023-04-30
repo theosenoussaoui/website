@@ -1,7 +1,9 @@
 ---
-navtitle: Meetup
-title: Meetup
-img: meetup-banner.jpg
+title: Meetup 2019
+description: Meetup 2019
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Meetup 2019
 ---
 
 ## Où ?

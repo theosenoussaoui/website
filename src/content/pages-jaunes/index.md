@@ -1,7 +1,9 @@
 ---
-navtitle: Pages Jaunes
-title: Pages Jaunes
-img: bg-page.jpg
+title: Vendors index page
+description: Pages Jaunes
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Pages Jaunes
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css" />

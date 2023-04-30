@@ -1,7 +1,9 @@
 ---
-navtitle: Guides
-title: Les Formats
-img: bg-page.jpg
+title: Formats
+description: Formats
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Formats
 ---
 
 On trouve des claviers de toutes les tailles (et maintenant de toutes les formes), avec un nombre variable de touches. Concernant les tailles, on peut distinguer trois familles :

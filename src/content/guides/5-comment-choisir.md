@@ -1,7 +1,9 @@
 ---
-navtitle: Guides
-title: Comment choisir?
-img: bg-page.jpg
+title: Comment choisir ?
+description: Comment choisir ?
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Comment choisir ?
 ---
 
 ### Le Marketing

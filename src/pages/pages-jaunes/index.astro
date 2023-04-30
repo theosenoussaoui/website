@@ -1,8 +1,14 @@
 ---
+import { getEntryBySlug } from "astro:content";
+
 import PostsLayout from "layouts/PostsLayout.astro";
-import { Content as IndexBaseGuide } from "content/pages-jaunes/index.md";
+
+const entry = await getEntryBySlug("pages-jaunes", "index");
+const { Content } = await entry.render();
+
+const { title, description, tags, image, navigationTitle } = entry.data;
 ---
 
-<PostsLayout title="Vendors index page">
-  <IndexBaseGuide slot="article" />
+<PostsLayout title={title}>
+    <Content slot="article" />
 </PostsLayout>

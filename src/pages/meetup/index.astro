@@ -1,8 +1,10 @@
 ---
+import { getEntryBySlug } from "astro:content";
 import MeetupLayout from "layouts/MeetupLayout.astro";
-import { Content as IndexBaseMeetup } from "content/meetup/index.mdx";
+const entry = await getEntryBySlug("meetup", "index");
+const { Content } = await entry.render();
 ---
 
 <MeetupLayout title="Meetup index page">
-  <IndexBaseMeetup slot="article"/>
+    <Content slot="article" />
 </MeetupLayout>

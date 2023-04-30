@@ -1,8 +1,11 @@
 ---
+import { getEntryBySlug } from "astro:content";
+
 import MeetupLayout from "layouts/MeetupLayout.astro";
-import { Content as FaqMeetup } from "content/meetup/faq.md";
+const entry = await getEntryBySlug("meetup", "faq");
+const { Content } = await entry.render();
 ---
 
 <MeetupLayout title="Meetup FAQ page">
-  <FaqMeetup slot="article" />
+    <Content slot="article" />
 </MeetupLayout>

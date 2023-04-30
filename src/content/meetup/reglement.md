@@ -1,3 +1,11 @@
+---
+title: Meetup règlement
+description: Meetup règlement
+tags: ['Test', 'Test2']
+image: bg-page.jpg
+navigationTitle: Meetup règlement
+---
+
 # Résumé du règlement
 
 1. Le meetup est réservé aux personnes inscrites, et l’accès est contrôlé.
