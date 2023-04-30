@@ -56,7 +56,7 @@ export const Navbar = () => {
                         Pages jaunes
                     </a>
                     <a
-                        href="/guides"
+                        href="/guides/les-bases"
                         class="text-sm font-semibold leading-6 text-white"
                     >
                         Guides
@@ -66,12 +66,6 @@ export const Navbar = () => {
                         class="text-sm font-semibold leading-6 text-white"
                     >
                         Meetup 2022
-                    </a>
-                    <a
-                        href="/meetup/faq"
-                        class="text-sm font-semibold leading-6 text-white"
-                    >
-                        Meetup FAQ
                     </a>
                 </div>
             </nav>
@@ -130,7 +124,7 @@ export const Navbar = () => {
                                         Pages jaunes
                                     </a>
                                     <a
-                                        href="/guides"
+                                        href="/guides/les-bases"
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                                     >
                                         Guides
@@ -140,12 +134,6 @@ export const Navbar = () => {
                                         class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                                     >
                                         Meetup
-                                    </a>
-                                    <a
-                                        href="/meetup/faq"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                                    >
-                                        Meetup FAQ
                                     </a>
                                 </div>
                             </div>

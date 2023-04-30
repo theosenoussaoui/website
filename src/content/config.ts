@@ -11,7 +11,7 @@ const normalPageCollection = defineCollection({
 });
 
 export const collections = {
-    guides: normalPageCollection,
+    "les-bases": normalPageCollection,
     meetup: normalPageCollection,
     "pages-jaunes": normalPageCollection,
 };

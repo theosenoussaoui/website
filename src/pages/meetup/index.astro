@@ -1,8 +1,11 @@
 ---
 import { getEntryBySlug } from "astro:content";
 import MeetupLayout from "layouts/MeetupLayout.astro";
+
 const entry = await getEntryBySlug("meetup", "index");
 const { Content } = await entry.render();
+
+const { title, description, tags, image, navigationTitle } = entry.data;
 ---
 
 <MeetupLayout title="Meetup index page">

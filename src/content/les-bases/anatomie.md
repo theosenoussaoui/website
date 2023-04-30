@@ -24,7 +24,7 @@ On distingue principalement trois types de plastiques utilisés pour la fabricat
 
 L'ABS (acrylonitrile butadiène styrène) est le matériau le plus commun, disponible en plusieurs épaisseurs ; les touches en ABS fin sont les plus faciles (et les moins chers) à fabriquer, et donc les plus répandues. Les touches en ABS fin offrent la sensation de frappe la plus basique (la moins valorisée), tandis que celles en ABS épais sont en général d'une qualité supérieure et sont plus appréciées du fait de la sonorité plus sourde qu'elles confèrent à la frappe. Une critique récurrente à l'encontre des touches en ABS concerne leur tendance à "briller", en fait à voir leur texture se lisser du fait du contact répété avec les doigts, ce qui peut donner au bout de quelques mois (quelques semaines dans le pire des cas) l'impression désagréable que leur surface est grasse en permanence.
 
-Leurs légendes peuvent être pad-printed, laser-etched/engraved, doubleshot ou uv-printed (voir plus bas). A de très rares exceptions près, les touches en ABS fin sont les seules à permettre d'avoir des légendes rétroéclairées, ce qui oblige l'utilisateur à devoir choisir entre avoir des légendes rétroéclairées ou des touches de qualité.
+Leurs légendes peuvent être pad-printed, laser-etched/engraved, doubleshot ou uv-printed (voir plus bas). À de très rares exceptions près, les touches en ABS fin sont les seules à permettre d'avoir des légendes rétroéclairées, ce qui oblige l'utilisateur à devoir choisir entre avoir des légendes rétroéclairées ou des touches de qualité.
 
 ![](http://reho.st/preview/self/0128adf46bd2dfad3acf0f5b11d06e5918a46725.png)
 
