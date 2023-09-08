@@ -1,15 +1,14 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 import MeetupLayout from "layouts/MeetupLayout.astro";
 
 export async function getStaticPaths() {
-    const meetupEntries = await getCollection("meetup");
+  const meetupEntries = await getCollection("meetup");
 
-    console.log(meetupEntries);
-    return meetupEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  return meetupEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
@@ -17,5 +16,5 @@ const { Content } = await entry.render();
 ---
 
 <MeetupLayout title="Meetup index page">
-    <Content slot="article" />
+  <Content slot="article" />
 </MeetupLayout>

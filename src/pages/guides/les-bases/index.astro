@@ -4,18 +4,17 @@ import { getCollection } from "astro:content";
 
 const guidesEntries = await getCollection("les-bases");
 const currentPath = Astro.url.pathname;
+console.log(guidesEntries);
 ---
 
 <PostsLayout title="Posts index page">
-    <ul slot="article">
-        {
-            guidesEntries.map((post) => (
-                <li>
-                    <a href={`${currentPath}/${post.slug}`}>
-                        {post.data.title}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+  <ul slot="article">
+    {
+      guidesEntries.map((post) => (
+        <li>
+          <a href={`${currentPath}/${post.slug}`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
 </PostsLayout>

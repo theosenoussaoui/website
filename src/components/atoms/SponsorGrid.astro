@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const images = await Astro.glob("/src/assets/sponsors/*").then((files) => {
     return files.map((file) => file.default);
